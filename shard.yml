@@ -1,5 +1,7 @@
 name: carat
 version: 0.0.1
+description: |
+  A library for numerical and scientific computation.
 
 authors:
   - Dmitriy Serdyuk <serdyuk.dmitriy@gmail.com>
