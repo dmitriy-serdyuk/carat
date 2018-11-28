@@ -1,6 +1,6 @@
 # carat
 
-TODO: Write a description here
+A library for numerical and scientific computation.
 
 ## Installation
 
