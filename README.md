@@ -67,7 +67,7 @@ It can be created in a number of ways:
   ```
 - By range with step
   ```crystal
-  tensor[{0...3, 2}, {0...3, 2}]
+  tensor[0..2..4, 0..2..4]
   # [[ 0.0 2.0 ]
   #  [ 2.0 4.0 ]] 
   ```
