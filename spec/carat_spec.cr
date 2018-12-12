@@ -32,6 +32,7 @@ describe Carat do
       end
     end
 
+
     it "equal other array" do
       tensor1 = Tensor[2, 2].new([[0.0, 1.0], [2.0, 3.0]])
       tensor2 = Tensor[2, 2].new([[0.0, 1.0], [2.0, 3.0]])
@@ -62,6 +63,13 @@ describe Carat do
 
     it "slice with range" do
       tensor[0...2, 0...2].should eq(Tensor[2, 2].new([[0, 1], [3, 4]]))
+    end
+
+    it "slice with range with step" do
+      tensor = Tensor.new(4, 4) do |i, j|
+        (i + j).to_f
+      end
+      tensor[0...2...2, 0...2...4].should eq(Tensor[1, 2].new([[2], [4]]))
     end
 
     it "mixed indexing" do
